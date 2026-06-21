@@ -1,0 +1,132 @@
+.media-upload {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.media-upload__label {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+.media-upload__input {
+  display: none;
+}
+
+.media-upload__dropzone {
+  border: 2px dashed var(--border);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+  min-height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.media-upload__dropzone:hover,
+.media-upload__dropzone--active {
+  border-color: var(--accent);
+  background: rgba(225, 48, 108, 0.04);
+}
+
+.media-upload__dropzone--loading {
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.media-upload__placeholder p {
+  margin: 8px 0 4px;
+  font-size: 14px;
+  color: var(--text);
+}
+
+.media-upload__placeholder small {
+  color: var(--text-muted);
+  font-size: 12px;
+}
+
+.media-upload__icon {
+  font-size: 28px;
+  display: block;
+}
+
+.media-upload__preview-wrap {
+  width: 100%;
+}
+
+.media-upload__preview {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+.media-upload__replace {
+  margin-top: 8px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.media-upload__status {
+  font-size: 14px;
+  color: var(--accent);
+}
+
+.media-upload__error {
+  color: #e53935;
+  font-size: 13px;
+  margin: 0;
+}
+
+.media-upload__meta {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.media-upload__or {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--text-muted);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.media-upload__or::before,
+.media-upload__or::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+.media-upload__link {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+.media-upload__link input {
+  padding: 10px 12px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 14px;
+  color: var(--text);
+}
+
+.media-upload__link input:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(225, 48, 108, 0.1);
+}

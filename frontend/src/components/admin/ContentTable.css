@@ -1,0 +1,119 @@
+.dash-table-wrap {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.dash-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.dash-table th,
+.dash-table td {
+  padding: 16px 20px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+  vertical-align: middle;
+}
+
+.dash-table th {
+  background: var(--bg-elevated);
+  font-weight: 600;
+  color: var(--text-muted);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.dash-table tr:last-child td {
+  border-bottom: none;
+}
+
+.dash-table__content {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.dash-table__thumb {
+  width: 80px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+  background: var(--bg-elevated);
+}
+
+.dash-table__content strong {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+
+.dash-table__content small {
+  color: var(--text-muted);
+  font-size: 12px;
+}
+
+.dash-table__content p {
+  color: var(--text-muted);
+  font-size: 13px;
+  margin-top: 4px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.dash-toggle {
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  transition: all 0.15s;
+}
+
+.dash-toggle.on {
+  background: rgba(22, 163, 74, 0.1);
+  color: var(--success);
+  border-color: rgba(22, 163, 74, 0.3);
+}
+
+.dash-toggle.off {
+  color: var(--text-muted);
+}
+
+.dash-toggle:hover {
+  border-color: var(--accent);
+}
+
+.dash-delete {
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  background: transparent;
+  border: 1px solid rgba(220, 38, 38, 0.3);
+  color: var(--danger);
+  transition: all 0.15s;
+}
+
+.dash-delete:hover {
+  background: rgba(220, 38, 38, 0.06);
+}
+
+.dash-empty {
+  text-align: center;
+  padding: 48px 24px;
+  background: var(--bg-card);
+  border: 1px dashed var(--border);
+  border-radius: var(--radius);
+  color: var(--text-muted);
+  font-size: 14px;
+}

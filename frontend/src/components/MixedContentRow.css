@@ -1,0 +1,15 @@
+.mixed-content .yt-grid {
+  margin-bottom: 0;
+}
+
+.mixed-blogs {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.mixed-blogs.has-videos {
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}
